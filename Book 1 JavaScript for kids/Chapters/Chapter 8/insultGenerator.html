@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random Insult Generator !</title>
+</head>
+
+<body>
+    <h1>Insult Generator!</h1>
+    <script>
+        // Define the function generateRandomInsult
+        var generateRandomInsult = function () {
+            // Define arrays for random body parts, adjectives, and words
+            var randomBodyParts = ["Face", "Nose", "Hair"];
+            var randomAdjectives = ["Smelly", "Boring", "Stupid"];
+            var randomWords = ["Fly", "Marmot", "Stick", "Monkey", "Rat"];
+            // Function to pick a random word from an array
+            var pickRandomWord = function (words) {
+                return words[Math.floor(Math.random() * words.length)];
+            };
+            // Join all the random strings into a sentence
+            var randomString = "Your " + pickRandomWord(randomBodyParts) + " is like a " + pickRandomWord(randomAdjectives) + " " + pickRandomWord(randomWords) + "!!!";
+            // Return the constructed insult sentence
+            return randomString;
+        };
+        // Call the generateRandomInsult function and log the result
+        console.log(generateRandomInsult());
+        console.log(generateRandomInsult());
+        console.log(generateRandomInsult());
+        console.log(generateRandomInsult());
+        console.log(generateRandomInsult());
+    </script>
+</body>
+
+</html>
