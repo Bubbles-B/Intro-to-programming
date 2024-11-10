@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My first proper HTML page</title>
+</head>
+  <body>
+    <h1>Hello world!</h1>
+    <p>My first web page.</p>
+<!--This code is transforming the string input by replacing certain vowels with numeric characters 
+according to the following substitutions:
+
+"a" is replaced with "4".
+"e" is replaced with "3".
+"i" is replaced with "1".
+"o" is replaced with "0".
+For example, if input is "javascript is awesome", then the code will transform it into 
+"j4v4scr1pt 1s 4w3s0m3" and assign it to the variable output. Finally, it logs the transformed string output to the console.-->
+    <script>
+    var input = "javascript is awesome";
+    var output = "";
+
+    for (var i = 0; i < input.length; i++) {
+      if (input[i] === "a") {
+        output += "4";
+      } else if (input[i] === "e") {
+        output += "3";
+      } else if (input[i] === "i") {
+        output += "1";
+      } else if (input[i] === "o") {
+        output += "0";
+      } else {
+        output += input[i];
+      }
+    }
+
+    console.log(output);
+    </script>
+</body>
+</html>
+
