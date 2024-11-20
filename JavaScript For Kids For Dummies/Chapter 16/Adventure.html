@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Interactive Adventure</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='adventure.css'>
+</head>
+
+<body>
+    <div id="story"></div> <!-- The area where the story will be displayed -->
+
+    <!-- Initial story part -->
+    <div class="storyPart" id="answer01">
+        <p>You are the captain of a spaceship named "The Flying Hippo." One day, you're working on tuning up your ship's engines when you get an urgent message on your space phone:</p>
+        <p>"Captain, one of our Mars robots is sick. We need you to go to Mars immediately and retrieve it so that we can fix it and download the results of its important experiments."</p>
+        <p>You remember that you're supposed to go to a meeting of the Space Scouts tonight, and you were really looking forward to it. But, on the other hand, the other Space Scouts would understand that this mission is very important.</p>
+        <p>What do you do? Go to Mars, or stay home?</p>
+    </div>
+
+    <!-- Response for going to Mars -->
+    <div class="storyPart" id="answer11">
+        <p>You went to Mars and found the robot! After some exciting adventures, you successfully brought it back home.</p>
+    </div>
+
+    <!-- Response for staying home -->
+    <div class="storyPart" id="answer12">
+        <p>You stayed home and had a nice evening with the Space Scouts, but you couldn't shake off the feeling that you should have gone to Mars.</p>
+    </div>
+
+    <!-- Error message for invalid input in the second question -->
+    <div class="storyPart" id="err1">
+        <p>Invalid input. Please answer with GO TO MARS or STAY HOME.</p>
+    </div>
+
+    <!-- Additional responses and error messages can be added here -->
+    <div class="storyPart" id="answer21">
+        <p>You decided to risk it and encountered many challenges. But in the end, you succeeded!</p>
+    </div>
+    
+    <div class="storyPart" id="answer22">
+        <p>You chose to go home, and it turned out to be a quiet night. Sometimes, that’s just as rewarding.</p>
+    </div>
+
+    <div class="storyPart" id="err2">
+        <p>Invalid input. Please answer with RISK IT or GO HOME.</p>
+    </div>
+
+    <div id="siteFooter">
+        <div id="question"></div> <!-- Area for the current question -->
+        <div id="answer">Enter your answer:
+            <input type="text" id="yourAnswer" />
+            <button type="button" id="submit">Go!</button>
+        </div>
+    </div>
+
+    <script src='Adventure.js'></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>

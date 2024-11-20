@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0; /* Added to ensure no padding */
+    box-sizing: border-box; /* Helps with consistent sizing */
+}
+
+html, body {
+    font-family: Arial, sans-serif; /* Corrected the font-family syntax */
+    height: 100%;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+#story {
+    width: 100%;
+    color: yellow;
+    height: 80%; /* Adjust height as needed */
+    background-color: #333; /* Dark background for readability */
+    overflow-y: scroll; /* Allows scrolling if content overflows */
+}
+
+#site-footer { /* Corrected the ID from the unusual character */
+    position: static; /* Consider changing to 'fixed' if you want it at the bottom */
+    bottom: 0;
+    height: 20%; /* Adjust as needed */
+    background-color: #CCC; /* Light background for footer */
+}
+
+#question {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #CCC; /* Background for question area */
+    color: #333; /* Text color */
+}
+
+#answer {
+    padding: 10px 0;
+    width: 100%;
+    background-color: #333; /* Dark background for answer area */
+    color: #FFF; /* White text for contrast */
+    text-align: center; /* Center-align text */
+    display: none; /* Hidden until a question is asked */
+}
+
+.storyPart {
+    display: none; /* Hide all story parts initially */
+}
+
+p {
+    margin-top: 1em; /* Space above paragraphs */
+    padding: 0 10px; /* Padding for better readability */
+}
